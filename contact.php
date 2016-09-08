@@ -7,12 +7,12 @@
     $email_message .= "Name: ".$name."\n";
     $email_message .= "Email: ".$email."\n";
     $email_message .= "Telephone: ".$number."\n";
-    $email_message .= "Message; ".$body."\n";
-    $email_to = 'egonzalezjr555@mgmail.com';
+    $email_message .= "Message: ".$body."\n";
+    $email_to = 'egonzalezjr555@gmail.com';
     $email_subject = "Fabian Website";
 
     $transport = \Swift_SmtpTransport::newInstance()
-            ->setUsername('data.overflow@hotmail.com')->setPassword('******')
+            ->setUsername('data.overflow@hotmail.com')->setPassword('*******')
             ->setHost('smtp-mail.outlook.com')
             ->setPort(587)->setEncryption('tls');
 
