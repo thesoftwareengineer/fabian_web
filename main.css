@@ -26,6 +26,10 @@
     list-style: none;
 }
 
+.bw-navigation .menu li {
+    display: inline-block;
+}
+
 .bw-cell {
     display: table-cell;
     text-align: center;
