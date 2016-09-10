@@ -24,15 +24,15 @@
 
 <body>
     <!-- header section -->
-    <div class="container" id="header-section">
+    <!--<div class="container" id="header-section">
         <header id="header" class="header-layout-center">
 
             <div class="bw-table bw-menu-desktop">
                 <nav class="bw-navigation navigation-left bw-cell">
                     <div class="menu-bw-primary-left-container">
                         <ul id="menu-bw-primary-left" class="menu">
-                            <li class="active"><a href="index.html">Home</a></li>
-                            <li><a href="about.html">About Me</a></li>
+                            <li class="active btn btn-default navbar-btn"><a href="index.html">Home</a></li>
+                            <li><a href="about.html" class="btn btn-default navbar-btn">About Me</a></li>
                         </ul>
                     </div>
                 </nav>
@@ -42,20 +42,42 @@
                 <nav class="bw-navigation navigation-right bw-cell">
                     <div class="menu-bw-primary-right-container">
                         <ul id="menu-bw-primary-right" class="menu">
-                            <li><a href="blog.html">Blog</a></li>
-                            <li><a href="contact.html">Contact Me</a></li>
+                            <li><a href="blog.html" class="btn btn-default navbar-btn">Blog</a></li>
+                            <li><a href="contact.html" class="btn btn-default navbar-btn">Contact Me</a></li>
                         </ul>
                     </div>
                 </nav>
             </div>
 
         </header>
+    </div>-->
+    <div class="container" id="header-section">
+        <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <a class="navbar-brand" href="#">Brand</a>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-left">
+                    <li class="active"><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Me</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
     </div>
     <!-- body section -->
     <div class="container" id="body-section">
         <ul class="pgwSlider">
             <li><img src="http://placehold.it/900x300" alt="Paris, France" data-description="Eiffel Tower and Champ de Mars"></li>
-            <li><img src="http://placehold.it/900x300" alt="Montréal, QC, Canada" data-large-src="montreal.jpg"></li>
+            <li><img src="http://placehold.it/900x300" alt="Montréal, QC, Canada"></li>
             <li>
                 <img src="http://placehold.it/900x300">
                 <span>Shanghai, China</span>
@@ -89,6 +111,14 @@
                         </ul>
                     </div>
                 </nav>
+                <div class="row">
+                    <div class="col-md-2 col-sm-2 col-xs-2">
+                        <a href="www.facebook.com"><i class="fa fa-facebook"> My Facebook</i></a>
+                    </div>
+                    <div class="col-md-2 col-sm-2 col-xs-2">
+                        <a href="www.instagram.com"><i class="fa fa-instagram"> My Instagram</i></a>
+                    </div>
+                </div>
                 <div class="footer-copy">Copyright © 2016 Leon Photography</div>
             </div>
         </footer>

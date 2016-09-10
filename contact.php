@@ -12,7 +12,7 @@
     $email_message .= "Message: ".$body."\n";
     $email_to = 'egonzalezjr555@gmail.com';
     $email_subject = "Leon Website Request";
-    $transport = \Swift_SmtpTransport::newInstance('xo7.x10hosting.com', 465,'ssl')->setUsername('sender@dataoverflow.elementfx.com')->setPassword('567321ep');
+    $transport = \Swift_SmtpTransport::newInstance('xo7.x10hosting.com', 465,'ssl')->setUsername('sender@dataoverflow.elementfx.com')->setPassword('*******');
 
     $mailer = \Swift_Mailer::newInstance($transport);
     $message = \Swift_Message::newInstance('Our Code World Newsletter')
