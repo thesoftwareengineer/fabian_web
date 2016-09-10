@@ -1,5 +1,5 @@
 <?php
-    require_once './vendor/swiftmailer/swiftmailer/lib/swift_required.php';
+    require_once '/swiftmailer/swiftmailer/lib/swift_required.php';
     $name = $_POST['name'];
     $email = $_POST['email'];
     $number = $_POST['number'];
