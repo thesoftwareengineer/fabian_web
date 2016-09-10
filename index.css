@@ -19,3 +19,7 @@
 .navbar-toggle {
     z-index: 3;
 }
+
+#pad-left {
+    padding-right: 10px;
+}
