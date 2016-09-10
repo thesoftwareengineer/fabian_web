@@ -1,0 +1,72 @@
+#header {
+    display: block;
+    height: 150px;
+    position: relative;
+    top: 0;
+    right: 12px;
+    left: 12px;
+}
+
+.navigation-left {
+    text-align: right;
+    padding-right: 3%;
+}
+
+.navigation-right {
+    text-align: left;
+    padding: 3%;
+}
+
+.bw-navigation {
+    width: 50%;
+}
+
+.bw-navigation .menu {
+    margin: 0;
+    list-style: none;
+}
+
+.bw-cell {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.bw-table {
+    position: absolute;
+    display: table;
+    width: 100%;
+    height: 100%;
+}
+
+.navigation-footer {
+    float: left;
+    width: 100%;
+    padding: 40px 0 10px 0;
+}
+
+.bw-footer {
+    text-align: center;
+}
+
+.navigation-footer .menu {
+    margin: 0;
+    list-style: none;
+    text-align: center;
+}
+
+.navigation-footer .menu li {
+    display: inline-block;
+}
+
+.footer-copy {
+    text-transform: uppercase;
+    text-align: center;
+}
+
+footer,
+header,
+main,
+nav {
+    display: block;
+}
