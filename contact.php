@@ -1,5 +1,7 @@
 <?php
-    require_once '/swiftmailer/swiftmailer/lib/swift_required.php';
+    //require_once 'swiftmailer/swiftmailer/lib/swift_required.php';
+    require 'vendor/autoload.php';
+
     $name = $_POST['name'];
     $email = $_POST['email'];
     $number = $_POST['number'];
@@ -9,27 +11,19 @@
     $email_message .= "Telephone: ".$number."\n";
     $email_message .= "Message: ".$body."\n";
     $email_to = 'egonzalezjr555@gmail.com';
-    $email_subject = "Fabian Website";
-
-    $transport = \Swift_SmtpTransport::newInstance()
-            ->setUsername('data.overflow@hotmail.com')->setPassword('*******')
-            ->setHost('smtp-mail.outlook.com')
-            ->setPort(587)->setEncryption('tls');
+    $email_subject = "Leon Website Request";
+    $transport = \Swift_SmtpTransport::newInstance('xo7.x10hosting.com', 465,'ssl')->setUsername('sender@dataoverflow.elementfx.com')->setPassword('567321ep');
 
     $mailer = \Swift_Mailer::newInstance($transport);
-
-    $message = \Swift_Message::newInstance()
-       ->setSubject($email_subject)
-       ->setFrom(array('data.overflow@hotmail.com' => 'Email'))
-       ->setTo(array($email_to))
-       ->addPart($email_message)
-        ;
-
+    $message = \Swift_Message::newInstance('Our Code World Newsletter')
+       ->setFrom(array('sender@dataoverflow.elementfx.com' => 'Leon contact'))
+       ->setTo(array($email_to => "mail@mail.com"))
+       ->setBody($email_message);
     $result = $mailer->send($message);
     if ($result) {
-        echo "Message Sent Successfully!";
+        echo '<script type="text/javascript"> alert ("Thank you '.$name.' we have submitted your message and we will get back to you as soon as possible."); window.history.back();</script>';
     }
     else {
-        "Please fix the fields";
+        echo '<script type="text/javascript"> alert ("Sorry '.$name.' please try again."); window.history.back(); </script>';
     }
 ?>
