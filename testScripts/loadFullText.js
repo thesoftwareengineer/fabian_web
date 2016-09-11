@@ -1,6 +1,15 @@
+//Loads the contents based on file name i
 function reload(i, file_list) {
     $('#body-section').load('Scripts/' + file_list[i]);
 }
+
+/**************************************************************************
+On page load first get the file names and put them on a sorted list. Then
+check is if cookies have stored file index i.e. so that person doesn't lose
+their place using getCookie. Load the html content of this ith file to the
+body of blog.html. Finally if user wants to go back or to the front they
+can by selecting the buttons.
+**************************************************************************/
 $(document).ready(function () {
     $.get("Scripts/", function (data) {
         var file_list = $(data).find('#files').text();

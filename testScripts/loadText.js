@@ -1,3 +1,8 @@
+/***********************************************************************
+Callback function used by load to make sure that not too many words per
+post are shown on the main page. As we only want an intro. Perhaps on
+click() of a.more we should add link to blog with i_value sent.
+***********************************************************************/
 function callback() {
 
     var minimized_elements = $('p.post-text');
@@ -26,6 +31,10 @@ function callback() {
 
 }
 
+/***************************************************************************
+Finds names of the latest 3 blog posts then loads them using the callback
+function.
+***************************************************************************/
 $(document).ready(function () {
     $.get("Scripts/", function (data) {
         var file_list = $(data).find('#files').text();
