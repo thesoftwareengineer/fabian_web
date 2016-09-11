@@ -6,7 +6,7 @@ $(document).ready(function () {
         var file_list = $(data).find('#files').text();
         file_list = file_list.split('\n').sort();
         var i = getCookie("i_value");
-        if (i == "") {
+        if (i == "" || i == 0) {
             i = file_list.length - 1;
         }
         console.log(file_list[i]);
