@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-# -*- coding: utf-8 -*- 
+# -*- coding: utf-8 -*-
 from yattag import Doc
 import datetime
 from Tkinter import *
@@ -34,7 +34,7 @@ label2 = Message(frame, textvariable=var2, relief=RAISED )
 var2.set("Enter the Blog Posting")
 label2.pack()
 
-#Get bloposting 
+#Get bloposting
 textarea = Text(frame, height=30, width=40)
 textarea.pack()
 
