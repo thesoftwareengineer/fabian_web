@@ -18,7 +18,13 @@ $(document).ready(function () {
         if (i == "" || i == 0) {
             i = file_list.length - 1;
         }
-        console.log(file_list[i]);
+        file_list = file_list.filter(function (data) {
+            if (data.search('.html') != -1) {
+                return true;
+            }
+            return false;
+        });
+        console.log(file_list);
         reload(i, file_list);
         setCookie("i_value", i, 1);
         $('#newer').click(function () {

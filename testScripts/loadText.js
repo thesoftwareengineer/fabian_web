@@ -39,6 +39,12 @@ $(document).ready(function () {
     $.get("Scripts/", function (data) {
         var file_list = $(data).find('#files').text();
         file_list = file_list.split('\n').sort();
+        file_list = file_list.filter(function (data) {
+            if (data.search('.html') != -1) {
+                return true;
+            }
+            return false;
+        });
         $('#post1').load('Scripts/' + file_list[file_list.length - 1], callback);
         console.log('Srcipts/' + file_list[file_list.length - 1]);
         $('#post2').load('Scripts/' + file_list[file_list.length - 2], callback);
