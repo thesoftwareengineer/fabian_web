@@ -3,8 +3,8 @@
 }
 
 @media screen and (max-width: 768px) {
-    #body-section {
-        padding-top: 100px;
+    .navbar-brand {
+        top: 0%;
     }
 }
 
