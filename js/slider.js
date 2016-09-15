@@ -37,6 +37,10 @@ $(document).ready(function () {
         slide(slide_index + 1);
     });
 
+    setInterval(function () {
+        slide(slide_index + 1);
+    }, 300);
+
     function slide(new_slide_index) {
 
         var margin_left_pc = (new_slide_index * (-100) - 100) + "%";
