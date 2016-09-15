@@ -82,5 +82,7 @@
 }
 
 @media {
-    height: 300px;
+    .slider {
+        height: 300px;
+    }
 }
