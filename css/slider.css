@@ -80,3 +80,7 @@
 .slider .content a {
     color: inherit;
 }
+
+@media {
+    height: 300px;
+}
