@@ -102,6 +102,7 @@
 
 footer {
     padding: 50px 0 65px;
+    background-color: gainsboro;
 }
 
 footer .list-inline {
@@ -112,5 +113,7 @@ footer .list-inline {
 footer .footer-copy {
     font-size: 14px;
     text-align: center;
+    color: black;
     margin-bottom: 0;
+    margin-top: 10px;
 }
