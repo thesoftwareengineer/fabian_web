@@ -34,6 +34,18 @@
     height: 600px;
 }
 
+@media only screen and (max-width: 768px) {
+    .intro-header {
+        height: 400px;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .intro-header {
+        height: 300px;
+    }
+}
+
 .intro-header .site-heading,
 .intro-header .post-heading,
 .intro-header .page-heading {
