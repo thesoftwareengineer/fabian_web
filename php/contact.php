@@ -1,6 +1,6 @@
 <?php
     //require_once 'swiftmailer/swiftmailer/lib/swift_required.php';
-    require 'vendor/autoload.php';
+    require '../vendor/autoload.php';
 
     $name = $_POST['name'];
     $email = $_POST['email'];

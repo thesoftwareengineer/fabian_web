@@ -15,16 +15,17 @@ $(document).ready(function () {
         var file_list = $(data).find('#files').text();
         file_list = file_list.split('\n').sort();
         var i = getCookie("i_value");
-        if (i == "" || i == 0) {
-            i = file_list.length - 1;
-        }
         file_list = file_list.filter(function (data) {
             if (data.search('.html') != -1) {
                 return true;
             }
             return false;
         });
+        if (i >= file_list.length || i == "") {
+            i = file_list.length - 1;
+        }
         console.log(file_list);
+        console.log(i);
         reload(i, file_list);
         setCookie("i_value", i, 1);
         $('#newer').click(function () {
