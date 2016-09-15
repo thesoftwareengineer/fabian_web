@@ -39,7 +39,7 @@ $(document).ready(function () {
 
     setInterval(function () {
         slide(slide_index + 1);
-    }, 300);
+    }, 3000);
 
     function slide(new_slide_index) {
 
