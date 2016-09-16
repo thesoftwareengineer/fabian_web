@@ -21,7 +21,7 @@ def getVal(entry, textarea):
     def timeStamped(fname, fmt='%Y-%m-%d-%H-%M-%S_{fname}'):
         return datetime.datetime.now().strftime(fmt).format(fname=fname)
 
-    html_file = open('../Scripts/' + timeStamped('.html'), 'w')
+    html_file = open('../blog_post/' + timeStamped('.html'), 'w')
 
     html_file.write(doc.getvalue())
 
