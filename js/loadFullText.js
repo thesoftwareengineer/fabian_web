@@ -1,6 +1,8 @@
 //Loads the contents based on file name i
+var location = "\blog_post\"
+
 function reload(i, file_list) {
-    $('#body-section').load('Scripts/' + file_list[i]);
+    $('#body-section').load(location + file_list[i]);
 }
 
 /**************************************************************************
@@ -11,7 +13,7 @@ body of blog.html. Finally if user wants to go back or to the front they
 can by selecting the buttons.
 **************************************************************************/
 $(document).ready(function () {
-    $.get("Scripts/", function (data) {
+    $.get(location, function (data) {
         var file_list = $(data).find('#files').text();
         file_list = file_list.split('\n').sort();
         var i = getCookie("i_value");

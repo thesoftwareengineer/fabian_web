@@ -35,8 +35,9 @@ function callback() {
 Finds names of the latest 3 blog posts then loads them using the callback
 function.
 ***************************************************************************/
+var location = "\blog_post\"
 $(document).ready(function () {
-    $.get("Scripts/", function (data) {
+    $.get(location, function (data) {
         var file_list = $(data).find('#files').text();
         file_list = file_list.split('\n').sort();
         file_list = file_list.filter(function (data) {
@@ -45,11 +46,11 @@ $(document).ready(function () {
             }
             return false;
         });
-        $('#post1').load('Scripts/' + file_list[file_list.length - 1], callback);
-        console.log('Srcipts/' + file_list[file_list.length - 1]);
-        $('#post2').load('Scripts/' + file_list[file_list.length - 2], callback);
-        console.log('Scripts/' + file_list[file_list.length - 2]);
-        $('#post3').load('Scripts/' + file_list[file_list.length - 3], callback);
-        console.log('Scripts/' + file_list[file_list.length - 3]);
+        $('#post1').load(location + file_list[file_list.length - 1], callback);
+        console.log(location + file_list[file_list.length - 1]);
+        $('#post2').load(location + file_list[file_list.length - 2], callback);
+        console.log(location + file_list[file_list.length - 2]);
+        $('#post3').load(location + file_list[file_list.length - 3], callback);
+        console.log(location + file_list[file_list.length - 3]);
     });
 });
