@@ -24,6 +24,6 @@
         echo '<script type="text/javascript"> alert ("Thank you '.$name.' we have submitted your message and we will get back to you as soon as possible."); window.history.back();</script>';
     }
     else {
-        echo '<script type="text/javascript"> alert ("Sorry '.$name.' please try again."); window.history.location ="/index.html"; </script>';
+        echo '<script type="text/javascript"> alert ("Sorry '.$name.' please try again."); window.history.location ="../index.html"; </script>';
     }
 ?>
