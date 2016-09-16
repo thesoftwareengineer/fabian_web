@@ -1,7 +1,5 @@
 //Loads the contents based on file name i
-var location = "\blog_post\"
-
-function reload(i, file_list) {
+function reload(i, file_list, location) {
     $('#body-section').load(location + file_list[i]);
 }
 
@@ -13,6 +11,7 @@ body of blog.html. Finally if user wants to go back or to the front they
 can by selecting the buttons.
 **************************************************************************/
 $(document).ready(function () {
+    var location = "/blog_post/";
     $.get(location, function (data) {
         var file_list = $(data).find('#files').text();
         file_list = file_list.split('\n').sort();
@@ -28,13 +27,13 @@ $(document).ready(function () {
         }
         console.log(file_list);
         console.log(i);
-        reload(i, file_list);
+        reload(i, file_list, location);
         setCookie("i_value", i, 1);
         $('#newer').click(function () {
             i++;
             if (i <= file_list.length) {
                 setCookie("i_value", i, 1);
-                reload(i, file_list);
+                reload(i, file_list, location);
             } else {
                 alert('This is already the latest post!');
             }
@@ -43,7 +42,7 @@ $(document).ready(function () {
             i--;
             if (i >= 1) {
                 setCookie("i_value", i, 1);
-                reload(i, file_list);
+                reload(i, file_list, location);
             } else {
                 alert('This is already the oldest post!');
             }

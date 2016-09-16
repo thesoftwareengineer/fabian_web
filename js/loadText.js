@@ -35,8 +35,9 @@ function callback() {
 Finds names of the latest 3 blog posts then loads them using the callback
 function.
 ***************************************************************************/
-var location = "\blog_post\"
+
 $(document).ready(function () {
+    var location = "/blog_post/";
     $.get(location, function (data) {
         var file_list = $(data).find('#files').text();
         file_list = file_list.split('\n').sort();
