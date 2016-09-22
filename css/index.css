@@ -20,9 +20,8 @@ header {
     width: auto;
 }
 
-.navbar-brand {
+.navbar-center {
     position: absolute;
-    top: 55%;
     width: 100%;
     left: 0;
     text-align: center;
