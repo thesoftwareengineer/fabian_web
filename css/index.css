@@ -25,12 +25,30 @@ header {
     justify-content: center;
 }
 
+ul.navbar-right {
+    width: 45%;
+}
+
+ul.navbar-right li {
+    display: inline;
+    float: left;
+}
+
+ul.navbar-left {
+    width: 45%;
+}
+
+ul.navbar-left li {
+    display: inline;
+    float: right;
+}
+
 .navbar-toggle {
     z-index: 3;
 }
 
-#pad-left {
-    padding-right: 10px;
+#header-section {
+    padding-bottom: 50px;
 }
 
 .intro-header {
