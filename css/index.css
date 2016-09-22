@@ -12,12 +12,16 @@ header {
 
 @media screen and (max-width: 768px) {
     .navbar-brand {
-        top: 0%;
+        font-size: 20px;
+        float: left;
+        margin: 0;
+        padding: 15px 0 15px 15px;
     }
 }
 
 #nav-section {
     width: auto;
+    align-content: center;
 }
 
 .navbar-brand {
@@ -33,7 +37,14 @@ header {
 }
 
 ul.navbar-right {
-    width: 45%;
+    width: 44%;
+}
+
+ul.navbar-right li a {
+    display: block;
+    width: 105px;
+    height: 50px;
+    text-align: center;
 }
 
 ul.navbar-right li {
@@ -42,12 +53,19 @@ ul.navbar-right li {
 }
 
 ul.navbar-left {
-    width: 45%;
+    width: 43%;
 }
 
 ul.navbar-left li {
     display: inline;
     float: right;
+}
+
+ul.navbar-left li a {
+    display: block;
+    width: 105px;
+    height: 50px;
+    text-align: center;
 }
 
 .navbar-toggle {
