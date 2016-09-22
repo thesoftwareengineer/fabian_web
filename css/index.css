@@ -35,6 +35,10 @@ header {
     justify-content: center;
 }
 
+.navbar-brand {
+    top: -15px;
+}
+
 ul.navbar-right {
     width: 44%;
 }
