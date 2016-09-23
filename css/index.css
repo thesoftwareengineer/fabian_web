@@ -11,11 +11,26 @@ header {
 /* Navigation Section */
 
 @media screen and (max-width: 768px) {
+    #nav-section {
+        position: relative;
+    }
     .navbar-brand {
-        font-size: 20px;
-        float: left;
+        visibility: hidden;
+    }
+    .navbar-header {
+        right: 0;
+        position: absolute;
+        top: 0;
+    }
+    .navbar-right {
         margin: 0;
-        padding: 15px 0 15px 15px;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .navbar-right li {
+        display: block;
+        margin-top: 4px;
     }
 }
 
