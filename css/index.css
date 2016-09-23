@@ -39,6 +39,38 @@ header {
     top: -15px;
 }
 
+ul.navbar-right {
+    width: 44%;
+}
+
+ul.navbar-right li a {
+    display: block;
+    width: 105px;
+    height: 50px;
+    text-align: center;
+}
+
+ul.navbar-right li {
+    display: inline;
+    float: left;
+}
+
+ul.navbar-left {
+    width: 43%;
+}
+
+ul.navbar-left li {
+    display: inline;
+    float: right;
+}
+
+ul.navbar-left li a {
+    display: block;
+    width: 105px;
+    height: 50px;
+    text-align: center;
+}
+
 .navbar-toggle {
     z-index: 3;
 }
