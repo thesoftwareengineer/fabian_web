@@ -14,6 +14,9 @@ header {
     #nav-section {
         position: relative;
     }
+    .navbar-brand {
+        visibility: hidden;
+    }
 }
 
 @media screen and (min-width: 700px) {
@@ -29,32 +32,36 @@ header {
         align-items: center;
         justify-content: center;
     }
-    ul.navbar-right {
-        width: 44%;
-    }
-    ul.navbar-right li a {
-        display: block;
-        width: 105px;
-        height: 50px;
-        text-align: center;
+    ul.navbar-left li {
+        display: inline;
+        float: right;
     }
     ul.navbar-right li {
         display: inline;
         float: left;
     }
-    ul.navbar-left {
-        width: 43%;
-    }
-    ul.navbar-left li {
-        display: inline;
-        float: right;
-    }
-    ul.navbar-left li a {
-        display: block;
-        width: 105px;
-        height: 50px;
-        text-align: center;
-    }
+}
+
+ul.navbar-right {
+    width: 44%;
+}
+
+ul.navbar-right li a {
+    display: block;
+    width: 105px;
+    height: 50px;
+    text-align: center;
+}
+
+ul.navbar-left {
+    width: 43%;
+}
+
+ul.navbar-left li a {
+    display: block;
+    width: 105px;
+    height: 50px;
+    text-align: center;
 }
 
 #nav-section {
