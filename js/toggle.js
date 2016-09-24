@@ -1,6 +1,6 @@
 $(document).ready(function () {
     $("#logo-toggle").click(function () {
-        var visibility = document.getElementsByClassName("navbar-brand").getAttribute("visibility");
+        var visibility = $('.navbar-brand').css('visibility');
         if (visibility == "hidden") {
             $(".navbar-brand").css("visibility", "visible");
         } else {
