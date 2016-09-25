@@ -78,6 +78,33 @@ ul.navbar-left li a {
 }
 
 
+/* Index Section Aside */
+
+section.left {
+    float: left;
+    margin: 0 1.5%;
+    width: 33%;
+}
+
+section.middle {
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+section.left h3 {
+    text-align: center;
+}
+
+aside.right {
+    float: right;
+    margin: 0 1.5%;
+    width: 60%;
+}
+
+
 /* Header Section*/
 
 .intro-header {
