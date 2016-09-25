@@ -84,18 +84,16 @@ section.left {
     float: left;
     margin: 0 1.5%;
     width: 33%;
+    height: 600px;
 }
 
-section.middle {
+section.left h3 {
+    text-align: center;
     position: relative;
     top: 50%;
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
-}
-
-section.left h3 {
-    text-align: center;
 }
 
 aside.right {
